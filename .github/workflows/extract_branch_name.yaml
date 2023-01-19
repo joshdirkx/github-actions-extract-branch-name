@@ -1,5 +1,10 @@
 name: extract github branch name
 
+on:
+  push:
+    branchs:
+      - main
+
 jobs:
   extract_branch_name:
     runs-on: ubuntu-latest
